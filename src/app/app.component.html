@@ -1,371 +1,75 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="top nav">
-  <nav class="navbar navbar-default">
+<!--header-->
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="navbar-nav">
+                <img src="assets/images/logo2.png" alt="logo" height="40px;">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">TOPIC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ĐIỂM DU LỊCH</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SỰ TRẢI NGHIỆM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SỰ KIỆN</a>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right" action="login.html">
+                <button id="btn-login" class="btn btn-default my-2 my-sm-0" type="submit">Đăng nhập</button>
+            </form>
+            <form class="navbar-form navbar-right">
+                <input class="form-control mr-sm-2" type="text" placeholder="Tìm Kiếm">
+                <button class="btn btn-default my-2 my-sm-0" type="submit">Tìm Kiếm</button>
+            </form>
+
+        </div>
+    </div>
+</nav>
+<!--// header-->
+<router-outlet></router-outlet>
+<!--footer-->
+<footer>
     <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">ĐÀ NẴNG TRAVEL</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="#topic" class="page-scroll">Topic</a></li>
-          <li><a href="#hotel" class="page-scroll">Hotel</a></li>
-          <li><a href="#about" class="page-scroll">About</a></li>
-          <li><a href="#contact" class="page-scroll">Contact</a></li>
-          <li><a href="login.html" class="page-scroll">Sign in</a></li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
-</div>
-<div class="banner" id="home">
-  <div class="container-fluid">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="assets/images/banner1.jpg" alt="w3layouts" class="img-responsive">
-        </div>
-        <div class="item">
-          <img src="assets/images/banner2.jpg" alt="w3layouts" class="img-responsive">
-        </div>
-        <div class="item">
-          <img src="assets/images/banner3.jpg" alt="w3layouts" class="img-responsive">
-        </div>
-        <div class="item">
-          <img src="assets/images/banner4.jpg" alt="w3layouts" class="img-responsive">
-        </div>
-      </div>
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
-</div><br />
-<!-- // header -->
-<!-- container -->
-<div class="container text-center">
-  <h3 class="title1">Bài Viết Nổi Bật</h3>
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="panels polaroid item_blue">
-        <div class="img">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        </div>
-        <div class="item-content">
-          <h4>Tên tiêu đề</h4>
-          <div class="content_description">
-            <p>Duis interdum malesuada nunc, nec vestibulum erat sagittis quis. Pellentesque imperdiet lorem ac auctor.</p>
-          </div>
-          <div class="content-infor">
-            <button type="button" class="btn btn-primary btn-sm">
-              <span class="glyphicon glyphicon-thumbs-up"></span> Like
-            </button>
-            <button type="button" class="btn btn-default btn-sm">
-              <span class="glyphicon glyphicon-comment"></span> comment
-            </button>
-            <div class="btn btn-danger">Xem Chi Tiết
+        <div class="row content-footer">
+            <div class="col-md-4">
+                <img style="float: left" src="assets/images/logo2.png" alt="logo" width="100%" height="80">
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="panels polaroid item_blue">
-        <div class="img">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        </div>
-        <div class="item-content">
-          <h4>Tên tiêu đề</h4>
-          <div class="content_description">
-            <p>Duis interdum malesuada nunc, nec vestibulum erat sagittis quis. Pellentesque imperdiet lorem ac auctor.</p>
-          </div>
-          <div class="content-infor">
-            <button type="button" class="btn btn-primary btn-sm">
-              <span class="glyphicon glyphicon-thumbs-up"></span> Like
-            </button>
-            <button type="button" class="btn btn-default btn-sm">
-              <span class="glyphicon glyphicon-comment"></span> comment
-            </button>
-            <div class="btn btn-danger">Xem Chi Tiết
+            <div class="col-md-4">
+                <ul class="menu">
+                    <span>About</span>
+                    <li>
+                        <i class="fa fa-phone" aria-hidden="true"></i> <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i> <a href="#">Gmail</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">Twitter</a>
+                    </li>
+                </ul>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="panels polaroid item_blue">
-        <div class="img">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        </div>
-        <div class="item-content">
-          <h4>Tên tiêu đề</h4>
-          <div class="content_description">
-            <p>Duis interdum malesuada nunc, nec vestibulum erat sagittis quis. Pellentesque imperdiet lorem ac auctor.</p>
-          </div>
-          <div class="content-infor">
-            <button type="button" class="btn btn-primary btn-sm">
-              <span class="glyphicon glyphicon-thumbs-up"></span> Like
-            </button>
-            <button type="button" class="btn btn-default btn-sm">
-              <span class="glyphicon glyphicon-comment"></span> comment
-            </button>
-            <div class="btn btn-danger">Xem Chi Tiết
+            <div class="col-md-4">
+                <ul class="adress">
+                    <span>Contact</span>
+                    <li>
+                        <i class="fa fa-phone" aria-hidden="true"></i> <a href="#">Phone</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i> <a href="#">Adress</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">Email</a>
+                    </li>
+                </ul>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-    <div class="col-sm-4">
-      <div class="panels polaroid item_blue">
-        <div class="img">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        </div>
-        <div class="item-content">
-          <h4>Tên tiêu đề</h4>
-          <div class="content_description">
-            <p>Duis interdum malesuada nunc, nec vestibulum erat sagittis quis. Pellentesque imperdiet lorem ac auctor.</p>
-          </div>
-          <div class="content-infor">
-            <button type="button" class="btn btn-primary btn-sm">
-              <span class="glyphicon glyphicon-thumbs-up"></span> Like
-            </button>
-            <button type="button" class="btn btn-default btn-sm">
-              <span class="glyphicon glyphicon-comment"></span> comment
-            </button>
-            <div class="btn btn-danger">Xem Chi Tiết
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="panels polaroid item_blue">
-        <div class="img">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        </div>
-        <div class="item-content">
-          <h4>Tên tiêu đề</h4>
-          <div class="content_description">
-            <p>Duis interdum malesuada nunc, nec vestibulum erat sagittis quis. Pellentesque imperdiet lorem ac auctor.</p>
-          </div>
-          <div class="content-infor">
-            <button type="button" class="btn btn-primary btn-sm">
-              <span class="glyphicon glyphicon-thumbs-up"></span> Like
-            </button>
-            <button type="button" class="btn btn-default btn-sm">
-              <span class="glyphicon glyphicon-comment"></span> comment
-            </button>
-            <div class="btn btn-danger">Xem Chi Tiết
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="panels polaroid item_blue">
-        <div class="img">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        </div>
-        <div class="item-content">
-          <h4>Tên tiêu đề</h4>
-          <div class="content_description">
-            <p>Duis interdum malesuada nunc, nec vestibulum erat sagittis quis. Pellentesque imperdiet lorem ac auctor.</p>
-          </div>
-          <div class="content-infor">
-            <button type="button" class="btn btn-primary btn-sm">
-              <span class="glyphicon glyphicon-thumbs-up"></span> Like
-            </button>
-            <button type="button" class="btn btn-default btn-sm">
-              <span class="glyphicon glyphicon-comment"></span> comment
-            </button>
-            <div class="btn btn-danger">Xem Chi Tiết
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="pagination-last">
-    <div class="col-md-12">
-      <ul class="pagination">
-        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">2</a></li>
-        <li>
-          <a href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-</div><br />
-
-<!-- container 2 -->
-<div class="container text-center">
-  <h3 class="title2">Bài Viết</h3>
-  <div class="row">
-    <div class="col-sm-3">
-      <div class="panel polaroid item_blue">
-        <div class="img">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        </div>
-        <div class="item-content">
-          <h4>Tên tiêu đề</h4>
-          <div class="content_description">
-            <p>Duis interdum malesuada nunc, nec vestibulum erat sagittis quis. Pellentesque imperdiet lorem ac auctor.</p>
-          </div>
-          <div class="content-infor">
-            <div class="btn btn-success">Xem Chi Tiết
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="panel polaroid item_blue">
-        <div class="img">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        </div>
-        <div class="item-content">
-          <h4>Tên tiêu đề</h4>
-          <div class="content_description">
-            <p>Duis interdum malesuada nunc, nec vestibulum erat sagittis quis. Pellentesque imperdiet lorem ac auctor.</p>
-          </div>
-          <div class="content-infor">
-            <div class="btn btn-success">Xem Chi Tiết
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="panel polaroid item_blue">
-        <div class="img">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        </div>
-        <div class="item-content">
-          <h4>Tên tiêu đề</h4>
-          <div class="content_description">
-            <p>Duis interdum malesuada nunc, nec vestibulum erat sagittis quis. Pellentesque imperdiet lorem ac auctor.</p>
-          </div>
-          <div class="content-infor">
-            <div class="btn btn-success">Xem Chi Tiết
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="panel polaroid item_blue">
-        <div class="img">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        </div>
-        <div class="item-content">
-          <h4>Tên tiêu đề</h4>
-          <div class="content_description">
-            <p>Duis interdum malesuada nunc, nec vestibulum erat sagittis quis. Pellentesque imperdiet lorem ac auctor.</p>
-          </div>
-          <div class="content-infor">
-            <div class="btn btn-success">Xem Chi Tiết</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="pagination-last">
-    <div class="col-md-12">
-      <ul class="pagination">
-        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">2</a></li>
-        <li>
-          <a href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-</div><br />
-<!-- // container -->
-
-<div class="footer text-center">
-  <!-- Footer Elements -->
-  <div class="container">
-    <!--Grid row-->
-    <div class="row">
-
-      <!--Grid column-->
-      <div class="col-md-12 mb-4">
-        <!-- Form -->
-        <form class="form-inline">
-          <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </form>
-        <!-- Form -->
-      </div>
-    </div>
-    <!--Grid column-->
-  </div><br />
-  <!--Grid row-->
-  &copy; 2018 Quang Ba Du Lich Da Nang | Design by <a href="https://www.facebook.com/binhtranphuoc.5688"> Binh Tran</a>
-</div>
-
-<!--javascript-->
-<script src="assets/js/jquery-1.11.3.min.js"></script>
-<script src="assets/js/bootstrap.js"></script>
-<script src="assets/js/smoothscroll.js"></script>
-<script src="assets/js/jquery.easing.min.js"></script>
-<script src="assets/js/grayscale.js"></script>
-<script src="assets/js/move-top.js"></script>
-<!--//javascript-->
-<!-- js for gallery -->
-<script type="text/javascript" src="js/jquery.chocolat.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        var defaults = {
-            containerID: 'toTop', // fading element id
-            containerHoverID: 'toTopHover', // fading element hover id
-            scrollSpeed: 1200,
-            easingType: 'linear'
-        };
-
-        $().UItoTop({
-            easingType: 'easeOutQuart'
-        });
-
-    });
-</script>
-<!-- //js for gallery -->
-
-<router-outlet>
-</router-outlet>
+</footer>
+<!--// footer-->

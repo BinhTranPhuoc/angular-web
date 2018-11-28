@@ -1,19 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
-
-
-/*-- Reset-Code --*/
-
+ // css for body, header, footer, to top
+ /*-- Reset-Code --*/
 body {
   padding: 0;
   margin: 0;
   background: #FFF;
   font-family: 'Poppins', sans-serif;
+  position: relative;
 }
 
 body a {
@@ -33,250 +25,78 @@ body a:focus,
 a:hover {
   text-decoration: none;
 }
+ //header
+ .navbar {
+   margin-bottom: 0;
+   border-radius: 0;
+ }
+ input[type="button"],
+ input[type="submit"] {
+   transition: 0.5s all;
+   -webkit-transition: 0.5s all;
+   -moz-transition: 0.5s all;
+   -o-transition: 0.5s all;
+   -ms-transition: 0.5s all;
+ }
 
-input[type="button"],
-input[type="submit"] {
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-}
+ p {
+   margin: 0;
+   line-height: 1.9;
+   font-family: 'Nunito', sans-serif;
+   font-size: 14px;
+ }
 
-.title1 {
-  border-bottom: 2px solid red;
-  width: 20%;
-  text-align: left;
-  color: red;
-}
+ ul {
+   margin: 0;
+   padding: 0;
+ }
 
-.title2 {
-  border-bottom: 2px solid green;
-  width: 12%;
-  text-align: left;
-  color: green;
-}
+ label {
+   margin: 0;
+ }
 
-p {
-  margin: 0;
-  line-height: 1.9;
-  font-family: 'Nunito', sans-serif;
-  font-size: 14px;
-}
+ a:focus,
+ a:hover {
+   text-decoration: none;
+   outline: none;
+ }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
+ footer {
+   background-color: #337ab7;
+   padding: 30px 0px;
+ }
 
-label {
-  margin: 0;
-}
+ footer a {
+   color: #FFF;
+ }
 
-a:focus,
-a:hover {
-  text-decoration: none;
-  outline: none;
-}
+ .content-footer {
+   margin-left: 100px;
+ }
 
+ //css for script to top
+ #toTop {
+   display: none;
+   text-decoration: none;
+   position: fixed;
+   bottom: 20px;
+   right: 2%;
+   overflow: hidden;
+   z-index: 999;
+   width: 32px;
+   height: 32px;
+   border: none;
+   text-indent: 100%;
+   background: url("../assets/images/arrow.PNG") no-repeat 0px 0px;
+ }
 
-/*-- //Reset-Code --*/
-
-nav.navbar.navbar-default {
-  width: 100%;
-  position: absolute;
-  top: 19px;
-  z-index: 9;
-}
-
-body {
-  position: relative;
-}
-
-.navbar-default {
-  background-color: rgba(248, 248, 248, 0);
-  border-color: rgba(231, 231, 231, 0);
-}
-
-.navbar-default .navbar-brand {
-  color: #fff;
-  letter-spacing: 3px;
-  font-size: 37px;
-  font-weight: bold;
-}
-
-.navbar-default .navbar-nav>li>a {
-  color: #fff;
-  font-size: larger;
-}
-
-.navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a.active {
-  color: #f9461d;
-  background-color: transparent;
-}
-
-.navbar-default .navbar-brand:focus,
-.navbar-default .navbar-brand:hover {
-  color: #f9461d;
-  background-color: transparent;
-}
-
-.nav>li>a {
-  position: relative;
-  display: block;
-  padding: 10px 11px;
-  letter-spacing: 1px;
-}
-
-
-/*--banner--*/
-
-.banner-info-w3layouts {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.banner {
-  position: relative;
-}
-
-.banner .container-fluid {
-  padding: 0;
-}
-
-.jumbotron {
-  background-color: rgba(238, 238, 238, 0);
-  color: #fff;
-  border: 7px solid;
-  padding: 37px 37px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-h1 {
-  letter-spacing: 16px;
-  padding-bottom: 28px;
-  font-size: 73px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 2px rgba(16, 16, 16, 0.38);
-}
-
-.banner-info-w3layoutsp {
-  font-family: 'Nunito', sans-serif;
-  letter-spacing: 2px;
-}
-
-.jumbotron p {
-  margin-bottom: 15px;
-  font-size: 19px;
-  font-weight: normal;
-}
-
-.carousel-inner>.item>img {
-  line-height: 1;
-  width: 100%;
-  height: 794px;
-  object-fit: cover;
-  object-position: center;
-}
-
-.carousel-control.left,
-.carousel-control.right {
-  background-image: none;
-}
-
-
-/*-- //banner --*/
-
-
-/* container */
-
-
-/* // container */
-
-
-/*--footer--*/
-
-.footer.text-center {
-  padding: 37px 10px;
-  background-color: #070707;
-  color: #F7F7F7;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-  color: rgb(101, 68, 244);
-}
-
-.footer a {
-  color: rgba(249, 70, 29, 0.9);
-}
-
-
-/*--top hover--*/
-
-#toTop {
-  display: none;
-  text-decoration: none;
-  position: fixed;
-  bottom: 20px;
-  right: 2%;
-  overflow: hidden;
-  z-index: 999;
-  width: 32px;
-  height: 32px;
-  border: none;
-  text-indent: 100%;
-  //background: url("../assets/images/arrow.png") no-repeat 0px 0px;
-}
-
-#toTopHover {
-  width: 32px;
-  height: 32px;
-  display: block;
-  overflow: hidden;
-  float: right;
-  opacity: 0;
-  -moz-opacity: 0;
-  filter: alpha(opacity=0);
-}
-
-
-/*--/tophover--*/
-
-.panels {
-  border: 1px solid #FF0000;
-  border-radius: 0;
-  transition: box-shadow 0.5s;
-  margin-top: 30px;
-}
-
-.panel {
-  border: 1px solid #008000;
-  border-radius: 0;
-  transition: box-shadow 0.5s;
-  margin-top: 30px;
-}
-
-.panels:hover {
-  box-shadow: 5px 0px 40px rgba(0, 0, 0, .2)
-}
-
-.panel:hover {
-  box-shadow: 5px 0px 40px rgba(0, 0, 0, .2)
-}
-.item-content {
-  margin-top: 20px;
-}
-
-.content-infor {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 2px;
-  margin-right: 2px;
-}
+ #toTopHover {
+   width: 32px;
+   height: 32px;
+   display: block;
+   overflow: hidden;
+   float: right;
+   opacity: 0;
+   -moz-opacity: 0;
+   filter: alpha(opacity=0);
+ }
